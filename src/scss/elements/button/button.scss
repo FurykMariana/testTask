@@ -1,0 +1,25 @@
+@import "../../variables";
+
+.button {
+  text-transform: uppercase;
+  background-color: $mainBlue;
+  border: none;
+  border-radius: 15px;
+  margin: 25px auto;
+  padding: 10px 45px;
+  display: block;
+  transition: all .5s ease-in-out;
+  &:hover {
+    color: $white;
+    transform: scale(1.2);
+    outline: none;
+    box-shadow: none;
+  }
+  &:active, &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  @media (min-width: 768px) and (max-width: 992px) {
+    font-size: 14px;
+  }
+}

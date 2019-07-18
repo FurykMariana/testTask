@@ -1,0 +1,35 @@
+@import "../variables";
+
+.header {
+  background-color: $headerBg;
+  z-index: 1000;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  h1 {
+    color: $mainBlue;
+    text-transform: uppercase;
+    @media (min-width: 320px) and (max-width: 767px) {
+      margin-left: 20px;
+    }
+  }
+  &-links {
+    justify-content: space-around;
+    display: flex;
+    width: 20%;
+    @media (min-width: 320px) and (max-width: 767px) {
+      width: 40%;
+    }
+    a {
+      color: $mainBlue;
+      text-decoration: none;
+      transition: all .6s ease-in-out;
+      &:hover {
+        transform: scale(1.2);
+        color: $white;
+      }
+    }
+  }
+}
