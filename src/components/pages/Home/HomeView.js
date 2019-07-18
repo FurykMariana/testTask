@@ -41,7 +41,7 @@ export default function HomeView({
         <Link to="https://jsonplaceholder.typicode.com/" className="home__social__typicode">
             Fake API
         </Link>
-        <Link to="https://jsonplaceholder.typicode.com/" className="home__social__github">
+        <Link to="https://github.com/FurykMariana/testTask" className="home__social__github">
             Github
         </Link>
       </div>
